@@ -21,11 +21,19 @@ private:
 public:
     // --- 构造与析构 ---
     AForm(const std::string &name, int grade_for_sign, int grade_for_execute);
+	AForm(const AForm& other);
+	AForm& operator=(const AForm& other);
     // 抽象类必须有虚析构函数，确保子类对象能被正确销毁
     virtual ~AForm();
 
     // --- 异常类 ---
     class NotSignedException : public std::exception
+    {
+        public:
+            const char *what() const throw();
+    };
+
+	class GradeTooHighException : public std::exception
     {
         public:
             const char *what() const throw();
@@ -66,5 +74,7 @@ public:
     int getGradeForSign() const;
     int getGradeForExecute() const;
 };
+
+std::ostream& operator<<(std::ostream& os, const AForm& form);
 
 #endif

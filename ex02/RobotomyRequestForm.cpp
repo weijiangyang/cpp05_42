@@ -1,13 +1,13 @@
-#include "RobotoMyRequestForm.hpp"
+#include "RobotomyRequestForm.hpp"
 #include <fstream>
 #include <iostream>
 
-RobotoMyRequestForm::RobotoMyRequestForm(const std::string &target) : AForm("shrubbery Creation", 72, 45),
+RobotomyRequestForm::RobotomyRequestForm(const std::string &target) : AForm("shrubbery Creation", 72, 45),
 																	  _target(target)
 {
 }
-RobotoMyRequestForm::~RobotoMyRequestForm() {}
-void RobotoMyRequestForm::execute(const Bureaucrat &bureaucrat) const
+RobotomyRequestForm::~RobotomyRequestForm() {}
+void RobotomyRequestForm::execute(const Bureaucrat &bureaucrat) const
 {
 	checkExecute(bureaucrat);
 	std::cout << "Bzzzzzz... drilling noise...\n";

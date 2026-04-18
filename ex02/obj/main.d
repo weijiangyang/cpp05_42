@@ -1,7 +1,7 @@
-obj/Intern.o: Intern.cpp Intern.hpp AForm.hpp ShrubberyCreationForm.hpp \
+obj/main.o: main.cpp Bureaucrat.hpp ShrubberyCreationForm.hpp AForm.hpp \
  RobotomyRequestForm.hpp PresidentialPardonForm.hpp
-Intern.hpp:
-AForm.hpp:
+Bureaucrat.hpp:
 ShrubberyCreationForm.hpp:
+AForm.hpp:
 RobotomyRequestForm.hpp:
 PresidentialPardonForm.hpp:

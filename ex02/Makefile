@@ -3,7 +3,7 @@ NAME        = aform
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98 -MMD -MP
 
-SRCS        = Bureaucrat.cpp main.cpp AForm.cpp ShrubberyCreationForm.cpp RobotoMyRequestForm.cpp PresidentialPardonForm.cpp
+SRCS        = Bureaucrat.cpp main.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 
 OBJDIR      = obj
 OBJS        = $(SRCS:%.cpp=$(OBJDIR)/%.o)
